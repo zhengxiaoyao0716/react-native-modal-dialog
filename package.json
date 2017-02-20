@@ -1,0 +1,27 @@
+{
+  "name": "react-native-modal-dialog",
+  "version": "1.0.0",
+  "description": "react-native-modal-dialog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengxiaoyao0716/react-native-modal-dialog.git"
+  },
+  "keywords": [
+    "react-native",
+    "modal",
+    "dialog",
+    "alert",
+    "confirm",
+    "prompt"
+  ],
+  "author": "zhengxiaoyao0716",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhengxiaoyao0716/react-native-modal-dialog/issues"
+  },
+  "homepage": "https://github.com/zhengxiaoyao0716/react-native-modal-dialog#readme"
+}
