@@ -3,7 +3,7 @@ import React, { Component, PropTypes, Children } from 'react';
 import {
     StyleSheet, Dimensions,
     Text, View, TouchableWithoutFeedback, TextInput, ScrollView,
-    BackAndroid
+    BackHandler
 } from 'react-native';
 
 const StyleSheetPropType = PropTypes.instanceOf(StyleSheet);
@@ -94,10 +94,10 @@ export default class Dialog extends Component {
         this.lock = true;
         this.params = { ...this.props, onCancel: this.onCancel, ...params, };
         this.setState({ hidden: false, });
-        BackAndroid.addEventListener('cancelDialog', this.params.onCancel);
+        BackHandler.addEventListener('cancelDialog', this.params.onCancel);
     }
     hide() {
-        BackAndroid.removeEventListener('cancelDialog', this.params.onCancel);
+        BackHandler.removeEventListener('cancelDialog', this.params.onCancel);
         this.setState({ hidden: true });
         this.lock = false;
         this._lockQueue[0] && this.show(this._lockQueue[0]);
