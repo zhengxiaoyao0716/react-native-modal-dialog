@@ -1,5 +1,5 @@
-'use strict';
-import React, { Component, PropTypes, Children } from 'react';
+import React, { Component, Children } from 'react';
+import PropTypes from 'prop-types';
 import {
     StyleSheet, Dimensions,
     Text, View, TouchableWithoutFeedback, TextInput, ScrollView,
@@ -169,7 +169,7 @@ export class Prompt extends Dialog {
         negText: 'Cancel',
     };
     render() {
-        const {children, placeholder, onChangeText, messageStyle,} = this.params;
+        const { children, placeholder, onChangeText, messageStyle, } = this.params;
         if (children.length == 2 && children[0] === undefined && children[1] === undefined) {
             const _shouldComponentUpdate = this.shouldComponentUpdate;
             this.shouldComponentUpdate = () => false;
