@@ -48,7 +48,8 @@ export default class Example extends Component {
                     onPosClick: () => {
                         this.refs.dialog.hide();
                         this.refs.dialog.alert((function counter(count) { return count ? counter(count - 1) + count + '\n' : '0\n'; })(30));
-                    }
+                    },
+                    contentStyle: { backgroundColor: "#6cf"},
                 })
             }}>Custom Confirm</Text>
 
@@ -59,7 +60,7 @@ export default class Example extends Component {
 
             {Dialog.inject()}
             <Alert ref='alert' message='message'></Alert>
-            <Confirm ref='confirm'><Text>children</Text></Confirm>
+            <Confirm ref='confirm' contentStyle={{ backgroundColor: "#6cf"}}><Text>children</Text></Confirm>
             <Prompt ref='prompt'>
                 <TextInput placeholder='first' />
                 <TextInput placeholder='second' />
