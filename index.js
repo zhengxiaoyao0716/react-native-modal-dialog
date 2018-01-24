@@ -6,7 +6,7 @@ import {
     BackHandler
 } from 'react-native';
 
-const StyleSheetPropType = PropTypes.instanceOf(StyleSheet);
+const StylePropType = View.propTypes.style;
 
 export default class Dialog extends Component {
     constructor(props) {
@@ -23,13 +23,13 @@ export default class Dialog extends Component {
         posText: PropTypes.string,
         onPosClick: PropTypes.func,
         onCancel: PropTypes.func,
-        dialogStyle: StyleSheetPropType,
-        modalStyle: StyleSheetPropType,
-        contentStyle: StyleSheetPropType,
-        titleStyle: StyleSheetPropType,
-        messageStyle: StyleSheetPropType,
-        buttonBarStyle: StyleSheetPropType,
-        buttonStyle: StyleSheetPropType,
+        dialogStyle: StylePropType,
+        modalStyle: StylePropType,
+        contentStyle: StylePropType,
+        titleStyle: StylePropType,
+        messageStyle: StylePropType,
+        buttonBarStyle: StylePropType,
+        buttonStyle: StylePropType,
     };
     static defaultProps = {
         posText: 'OK',

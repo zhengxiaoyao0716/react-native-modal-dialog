@@ -6,9 +6,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.0.0",
-    "react-native": "0.51.0",
-    "react-native-modal-dialog": "1.2.1"
+    "react": "^16.0.0",
+    "react-native": "^0.51.0",
+    "react-native-modal-dialog": "1.2.2"
   },
   "devDependencies": {
     "babel-jest": "18.0.0",
@@ -18,5 +18,11 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "Example of react-native-modal-dialog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengxiaoyao0716/react-native-modal-dialog.git"
+  },
+  "license": "MIT"
 }
