@@ -5,6 +5,9 @@
 ![prompt.png](/Screenshots/prompt.png)
 
 ***
+For more usage, goto this online example: [expo](https://snack.expo.io/@zhengxiaoyao0716/github.com-zhengxiaoyao0716-react-native-modal-dialog:reactnativemodaldialog)
+
+***
 
 ``` shell
 # install
