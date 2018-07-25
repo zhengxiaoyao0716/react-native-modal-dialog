@@ -1,4 +1,5 @@
 {
-  "name": "ReactNativeModalDialog",
-  "displayName": "ReactNativeModalDialog"
+  "expo": {
+    "sdkVersion": "27.0.0"
+  }
 }
