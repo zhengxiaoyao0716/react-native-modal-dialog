@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import {
     StyleSheet, Dimensions,
     Text, View, TouchableWithoutFeedback, TextInput, ScrollView,
-    BackHandler
+    BackHandler,
+    ViewPropTypes,
 } from 'react-native';
 
-const StylePropType = View.propTypes.style;
+const StylePropType = ViewPropTypes.style;
 
 export default class Dialog extends Component {
     constructor(props) {
